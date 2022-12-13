@@ -1,4 +1,4 @@
-package chapterOne;
+package ChaptersFolder;
 
 public class Practice {
  public static void main(String[] args) {

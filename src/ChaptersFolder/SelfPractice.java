@@ -1,6 +1,8 @@
+package ChaptersFolder;
+
 import java.util.Scanner;
 
-public class SelfPractice{
+public class SelfPractice {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int count = 0;

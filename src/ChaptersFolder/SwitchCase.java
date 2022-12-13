@@ -1,4 +1,4 @@
-package chapterOne;
+package ChaptersFolder;
 
 import java.util.Scanner;
 

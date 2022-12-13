@@ -21,8 +21,14 @@ public class ClockTest {
     }
     @Test
     public void secondTest(){
+        Clock clock = new Clock(0, 0, 65);
+        clock.setSecond(65);
+        assertEquals(0,clock.getSecond());
+    }
+
+    @Test
+    public void displayTest(){
         Clock clock = new Clock(0, 0, 0);
-        clock.setSecond(56);
-        assertEquals(56,clock.getSecond());
+        clock.displayTime();
     }
 }
