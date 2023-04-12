@@ -15,6 +15,7 @@ public class CreditCardValidator {
         int firstAnswer;
         int secondAnswer = 0;
         int response;
+        System.out.println("######################################################################");
         System.out.println("**********************************************************************");
         if (length >= 13 && length <= 16){
             if (((index[0]) - 48) == 4){
@@ -48,6 +49,7 @@ public class CreditCardValidator {
                 System.out.println("**Credit Card Validity: Valid");
             }else System.out.println("**Credit Card Validity: Invalid");
             System.out.println("**********************************************************************");
+            System.out.println("######################################################################");
             System.out.println("Thanks for using my application....................................");
         }
         else System.out.println("Try again esteemed customer...........");

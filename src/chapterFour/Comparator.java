@@ -12,7 +12,6 @@ public class Comparator {
         int firstNumber = scanner.nextInt();
         System.out.println("Enter second number: ");
         int secondNumber = scanner.nextInt();
-
         if (firstNumber == secondNumber){
             System.out.println("0");
         }
