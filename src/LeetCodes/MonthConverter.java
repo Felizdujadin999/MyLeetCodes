@@ -1,10 +1,8 @@
 package LeetCodes;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Scanner;
@@ -16,8 +14,8 @@ public class MonthConverter {
         String input = scanner.nextLine();
         monthConverter(input);
         System.out.println(convert(input));
+        System.out.println(ageCalculator(input));
         System.out.println(convert2(input));
-
     }
 
     public static void monthConverter(String fullDate) throws ParseException {
@@ -36,5 +34,10 @@ public class MonthConverter {
     public static String convert2(String date){
         return DateTimeFormatter.ofPattern("EEEE, d MMMM, yyyy")
                 .format(LocalDate.parse(date, DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+    }
+
+    public static int ageCalculator(String dateOfBirth){
+        String[] splitDate = dateOfBirth.split("/");
+        return LocalDate.now().getYear() - Integer.parseInt(splitDate[2]);
     }
 }
