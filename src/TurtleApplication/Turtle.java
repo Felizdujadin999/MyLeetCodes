@@ -39,6 +39,9 @@ public class Turtle {
     }
     public void moveForward(int numberOfSteps) {
         if (direction==EAST) increaseColumn(numberOfSteps);
+        else if (direction==WEST) increaseColumn(numberOfSteps);
+        else if (direction==NORTH) increaseColumn(numberOfSteps);
+        else if (direction==SOUTH) increaseColumn(numberOfSteps);
     }
 
     public void increaseColumn(int numberOfSteps){

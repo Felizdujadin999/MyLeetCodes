@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class LCMOfANumber {
     public static void main(String[] args) {
 //        System.out.println(Arrays.toString(findHCF(10)));
-        System.out.println(Arrays.toString(findFactors(0)));
+        System.out.println(Arrays.toString(findFactors(100)));
     }
 
 //    public static int[] findHCF(int num) {
