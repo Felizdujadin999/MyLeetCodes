@@ -1,2 +1,6 @@
-package ChapterSeventeen;public interface CarMethod {
+package ChapterSeventeen.AnonymousClass;
+
+public interface CarMethod {
+void move();
+String stop();
 }

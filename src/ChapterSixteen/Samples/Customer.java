@@ -1,6 +1,4 @@
-package ChapterSixteen;
-
-import java.math.BigDecimal;
+package ChapterSixteen.Samples;
 
 public class Customer implements Comparable<Customer>{
     private int id;
