@@ -1,8 +1,14 @@
 package LeetCodes;
 
+import java.util.Arrays;
+
 public class NumberOfDigitsInAnArray {
     public static void main(String[] args) {
         String[] letter = {"AB1396", "Q2RBS", "G381AC"};
+        System.out.println(Arrays.stream(letter)
+                .flatMapToInt(CharSequence::chars)
+                .filter(Character::isDigit)
+                .count());
         System.out.println(countDigits(letter));
     }
 
